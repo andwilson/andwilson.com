@@ -130,11 +130,12 @@ export default ({ data }) => (
       <Description>
         My professional journey evolved from an early obsession with graphic and
         web design to where I am now: using data science to solve hard problems.
-        Somewhere in-between I discovered my love of startup culture, business
-        strategy, and technology’s profound impact on just about everything. My
-        work involves using the internet and machine learning to create things
-        that improve the human experience. When I’m not online, you’ll probably
-        find me snowboarding, discovering new places, or cooking with friends.
+        Somewhere in-between I discovered my love of startup culture and
+        business strategy, as well as technology’s profound impact on just about
+        everything. My work involves using the internet and machine learning to
+        create things that improve the human experience. When I’m not online,
+        you’ll probably find me snowboarding, discovering new places, or cooking
+        with friends.
       </Description>
       <Contact>
         <p>

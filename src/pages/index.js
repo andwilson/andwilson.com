@@ -12,18 +12,19 @@ const HeroWrapper = styled.div`
 
 const HeroContainer = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
   position: relative;
-  max-width: 960px;
   z-index: 2;
 `;
 
 const Title = styled(Link)`
   font-size: 50pt;
-  @media (min-width: 600px) {
-    font-size: 85pt;
+  border-bottom: 1px solid grey;
+  @media (min-width: 500px) {
+    font-size: 75pt;
   }
   @media (min-width: 850px) {
     font-size: 100pt;
@@ -36,12 +37,39 @@ const Title = styled(Link)`
   > :last-child {
     color: #4b372f;
   }
-  transition: all 1s;
+  transition: all 0.5s;
   :hover {
     opacity: 0.8;
   }
   > span {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+`;
+
+const Subtitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  > span {
+    margin: 9px 0.5em 0 0.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    font-size: 14pt;
+    @media (min-width: 500px) {
+      font-size: 22pt;
+    }
+    @media (min-width: 850px) {
+      font-size: 28pt;
+    }
+  }
+  > :first-child {
+    color: #bf7c37;
+  }
+  :nth-child(2) {
+    color: #47878e;
+  }
+  > :last-child {
+    color: #85b84d;
   }
 `;
 
@@ -55,6 +83,11 @@ export default ({ data }) => (
         <span>&</span>
         <span>Wilson</span>
       </Title>
+      <Subtitle>
+        <span>Data Science</span>
+        <span>&</span>
+        <span>Front End</span>
+      </Subtitle>
     </HeroContainer>
     <Img
       style={{
