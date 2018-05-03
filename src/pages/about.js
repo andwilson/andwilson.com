@@ -128,11 +128,13 @@ export default ({ data }) => (
         Hi. My name is <span>Andrew Wilson</span>.
       </Title>
       <Description>
-        Need an enthusiastic engineer on your data science, machine learning or
-        A.I team? Please reach out to me! I am always excited at the prospect of
-        collaborating with other passionately driven people on bigger projects.
-        Being a nomadic Engineer, I spend a good amount of time abroad, but am
-        open for grabbing a coffee if you are in the San Francisco area.
+        My professional journey evolved from an early obsession with graphic and
+        web design to where I am now: using data science to solve hard problems.
+        Somewhere in-between I discovered my love of startup culture, business
+        strategy, and technology’s profound impact on just about everything. My
+        work involves using the internet and machine learning to create things
+        that improve the human experience. When I’m not online, you’ll probably
+        find me snowboarding, discovering new places, or cooking with friends.
       </Description>
       <Contact>
         <p>
@@ -143,13 +145,10 @@ export default ({ data }) => (
         </p>
       </Contact>
       <Social>
-        <a href="https://github.com/JoshZastrow" target="_blank">
+        <a href="https://github.com/andwilson" target="_blank">
           <img src={github} />
         </a>
-        <a
-          href="https://www.linkedin.com/in/joshua-zastrow-b8131540/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/anddwilson/" target="_blank">
           <img src={linkedin} />
         </a>
       </Social>
