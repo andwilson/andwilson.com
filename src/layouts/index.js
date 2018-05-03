@@ -20,18 +20,11 @@ const Container = styled.div`
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props;
-    let header;
-    if (location.pathname === "/") {
-      header = null;
-    } else {
-      header = <DefaultNav data={this.props.data} />;
-    }
     return (
       <div>
         <Helmet>
           <link rel="shortcut icon" type="image/png" href={favicon} />
         </Helmet>
-        {header}
         <Container>{children()}</Container>
       </div>
     );

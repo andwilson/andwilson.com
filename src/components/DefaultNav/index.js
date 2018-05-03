@@ -1,14 +1,13 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import Img from "gatsby-image";
 
 const Wrapper = styled.div`
   background-color: #28aa55;
   margin-bottom: 18px;
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(189,189,189,1);
-  -moz-box-shadow: 0px 1px 2px 0px rgba(189,189,189,1);
-  box-shadow: 0px 1px 2px 0px rgba(189,189,189,1);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(189, 189, 189, 1);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(189, 189, 189, 1);
+  box-shadow: 0px 1px 2px 0px rgba(189, 189, 189, 1);
 `;
 
 const NavBar = styled.div`
@@ -21,7 +20,7 @@ const NavBar = styled.div`
   align-items: center;
 `;
 
-const Title = styled.div`
+const Home = styled.div`
   display: flex;
   > h1 {
     margin: 0;
@@ -59,37 +58,16 @@ const TLink = styled(Link)`
   }
 `;
 
-const Boy = styled(Img)`
-  margin: 5px 10px 10px 0;
-  width: 15px;
-`;
-
-const Computer = styled(Img)`
-  margin: 5px 0 10px 5px;
-  width: 30px;
-`;
-
 export default ({ data }) => (
   <Wrapper>
     <NavBar>
-      <Title>
-        <Boy
-          sizes={data.boy.sizes}
-        />
-        <h1>
-          <TLink to={"/"}>{data.site.siteMetadata.title}</TLink>
-        </h1>
-        <Computer
-          sizes={data.computer.sizes}
-        />
-      </Title>
+      <Home>
+        <TLink to="/about">
+          <span>&</span>
+          <span>Wilson</span>
+        </TLink>
+      </Home>
       <Nav>
-        <SLink to={"/projects/"} style={{ marginLeft: 0 }}>
-          Projects
-        </SLink>
-        <SLink to={"/notes/"}>Notes</SLink>
-        <SLink to={"/letters/"}>Letters</SLink>
-        <SLink to={"/about/"}>About</SLink>
       </Nav>
     </NavBar>
   </Wrapper>

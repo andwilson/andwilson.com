@@ -39,7 +39,7 @@ export default ({ data }) => (
 
 export const pageQuery = graphql`
   query ThanksQuery {
-    avatar: imageSharp(id: { regex: "/avatar.jpg/" }) {
+    avatar: imageSharp(id: { regex: "/linked-in-3.png/" }) {
       sizes(maxWidth: 500, grayscale: false) {
         ...GatsbyImageSharpSizes_tracedSVG
       }

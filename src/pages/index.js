@@ -4,8 +4,6 @@ import Helmet from "react-helmet";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
-import HomeNav from "../components/HomeNav";
-
 const HeroWrapper = styled.div`
   position: relative;
   height: 100vh;
@@ -22,13 +20,41 @@ const HeroContainer = styled.div`
   z-index: 2;
 `;
 
+const Title = styled(Link)`
+  font-size: 50pt;
+  @media (min-width: 600px) {
+    font-size: 85pt;
+  }
+  @media (min-width: 850px) {
+    font-size: 100pt;
+  }
+  text-decoration: none;
+  font-weight: bold;
+  > :first-child {
+    color: #47878e;
+  }
+  > :last-child {
+    color: #4b372f;
+  }
+  transition: all 1s;
+  :hover {
+    opacity: 0.8;
+  }
+  > span {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+`;
+
 export default ({ data }) => (
   <HeroWrapper>
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
     </Helmet>
     <HeroContainer>
-      <HomeNav data={data} />
+      <Title to="/about">
+        <span>&</span>
+        <span>Wilson</span>
+      </Title>
     </HeroContainer>
     <Img
       style={{
@@ -39,7 +65,7 @@ export default ({ data }) => (
         position: "fixed",
         top: 0,
         right: 0,
-        opacity: 0.1
+        opacity: 1
       }}
       sizes={data.background.sizes}
     />
@@ -53,19 +79,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    background: imageSharp(id: { regex: "/hex-bg.jpg/" }) {
+    background: imageSharp(id: { regex: "/paint-squares.jpg/" }) {
       sizes(maxWidth: 1240, grayscale: false) {
         ...GatsbyImageSharpSizes
-      }
-    }
-    boy: imageSharp(id: { regex: "/boy.png/" }) {
-      sizes(maxWidth: 400, grayscale: false) {
-        ...GatsbyImageSharpSizes_tracedSVG
-      }
-    }
-    computer: imageSharp(id: { regex: "/computer.png/" }) {
-      sizes(maxWidth: 400, grayscale: false) {
-        ...GatsbyImageSharpSizes_tracedSVG
       }
     }
   }

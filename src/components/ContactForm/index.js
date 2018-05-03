@@ -5,6 +5,7 @@ import FA from "react-fontawesome";
 
 const H2 = styled.h2`
   margin: 10px 0 1em 0;
+  color: #47878e;
 `;
 
 const Form = styled.form`
@@ -28,7 +29,7 @@ const Form = styled.form`
     padding: 7px;
     :focus {
       outline: none;
-      background-color: #eafaf0;
+      background-color: #faf2ef;
     }
   }
   > textarea {
@@ -42,7 +43,7 @@ const Form = styled.form`
     resize: none;
     :focus {
       outline: none;
-      background-color: #eafaf0;
+      background-color: #faf2ef;
     }
   }
   > button {
@@ -50,13 +51,13 @@ const Form = styled.form`
     justify-self: end;
     color: white;
     border-radius: 5px;
-    border: 1px solid #1d7f3f;
-    background-color: #28aa55;
+    border: 1px solid #3e2e27;
+    background-color: #4b372f;
     cursor: pointer;
     transition: all 0.2s ease;
     padding: 7px
     :hover {
-      background-color: #1d7f3f;
+      opacity: 0.8
     }
   }
 `;

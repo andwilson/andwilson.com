@@ -1,6 +1,6 @@
 {
-  "name": "joshmeetscomputer.com",
-  "description": "Josh Zastrows personal online portfolio",
+  "name": "&Wilson",
+  "description": "Andrew Wilsons personal online portfolio",
   "version": "1.0.0",
   "author": "Andrew Wilson",
   "dependencies": {
@@ -32,7 +32,7 @@
   "devDependencies": {
     "prettier": "^1.6.1"
   },
-  "homepage": "www.joshmeetscomputer.com",
+  "homepage": "www.andwilson.com",
   "keywords": [
     "gatsby"
   ],

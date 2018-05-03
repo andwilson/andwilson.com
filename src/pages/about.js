@@ -15,6 +15,7 @@ import resume from "./JAZ-Resume-April-2018.pdf";
 const Grid = styled.div`
   display: grid;
   grid-gap: 1em;
+  margin-top: 20px;
   grid-template:
     "avatar title"
     "description description"
@@ -49,7 +50,7 @@ const Title = styled.h1`
   margin: 0;
 
   > span {
-    color: #28aa55;
+    color: #47878e;
   }
 `;
 
@@ -98,14 +99,14 @@ const Resume = styled.div`
   > a {
     color: white;
     border-radius: 5px;
-    border: 1px solid #1d7f3f;
-    background-color: #28aa55;
+    border: 1px solid #3e2e27;
+    background-color: #4b372f;
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     padding: 7px
     :hover {
-      background-color: #1d7f3f;
+      opacity: 0.8;
     }
   }
 `;
@@ -124,7 +125,7 @@ export default ({ data }) => (
     <Grid>
       <Avatar sizes={data.avatar.sizes} />
       <Title>
-        Hi. My name is <span>Josh Zastrow</span>.
+        Hi. My name is <span>Andrew Wilson</span>.
       </Title>
       <Description>
         Need an enthusiastic engineer on your data science, machine learning or
@@ -135,10 +136,10 @@ export default ({ data }) => (
       </Description>
       <Contact>
         <p>
-          <FA name="phone-square" /> +1 (240) 418-4040
+          <FA name="phone-square" /> +1 (508) 826-5524
         </p>
         <p>
-          <FA name="envelope-square" /> j.a.zastrow.jr@gmail.com
+          <FA name="envelope-square" /> anddwilson@gmail.com
         </p>
       </Contact>
       <Social>
@@ -150,9 +151,6 @@ export default ({ data }) => (
           target="_blank"
         >
           <img src={linkedin} />
-        </a>
-        <a href="https://www.instagram.com/josh.zastrow/?hl=en" target="_blank">
-          <img src={instagram} />
         </a>
       </Social>
       <Resume>
@@ -169,7 +167,7 @@ export default ({ data }) => (
 
 export const pageQuery = graphql`
   query AboutQuery {
-    avatar: imageSharp(id: { regex: "/avatar.jpg/" }) {
+    avatar: imageSharp(id: { regex: "/linked-in-3.png/" }) {
       sizes(maxWidth: 500, grayscale: false) {
         ...GatsbyImageSharpSizes_tracedSVG
       }

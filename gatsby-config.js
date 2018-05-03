@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Josh Meets Computer",
-    author: "Josh Zastrow",
+    title: "&Wilson",
+    author: "Andrew Wilson",
   },
   plugins: [
     {
