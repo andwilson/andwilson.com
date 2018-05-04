@@ -10,7 +10,7 @@ import github from "../images/github-2.svg";
 import linkedin from "../images/linkedin-2.svg";
 import instagram from "../images/instagram-2.svg";
 
-import resume from "../../static/andrew-wilson-resume.pdf";
+import resume from "../images/andrew-wilson-resume.pdf";
 
 const Grid = styled.div`
   display: grid;
