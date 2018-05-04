@@ -134,8 +134,8 @@ export default ({ data }) => (
         business strategy, as well as technology’s profound impact on just about
         everything. My work involves using the internet and machine learning to
         create things that improve the human experience. When I’m not online,
-        you’ll probably find me snowboarding, discovering new places, or cooking
-        with friends.
+        you’ll probably find me snowboarding, discovering new places, snapping
+        photos, or cooking with friends.
       </Description>
       <Contact>
         <p>
