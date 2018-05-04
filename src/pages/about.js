@@ -10,7 +10,7 @@ import github from "../images/github-2.svg";
 import linkedin from "../images/linkedin-2.svg";
 import instagram from "../images/instagram-2.svg";
 
-import resume from "../../static/AndrewWilsonProfile.pdf";
+import resume from "../../static/andrew-wilson-resume.pdf";
 
 const Grid = styled.div`
   display: grid;
@@ -154,7 +154,7 @@ export default ({ data }) => (
         </a>
       </Social>
       <Resume>
-        <a href={resume} download="AndrewWilsonProfile.pdf">
+        <a href={resume} download="andrew-wilson-resume.pdf">
           Download resume <FA name="arrow-circle-down" />
         </a>
       </Resume>
